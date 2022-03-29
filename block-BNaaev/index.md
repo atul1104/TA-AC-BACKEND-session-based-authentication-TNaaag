@@ -1,4 +1,4 @@
-writeCode
+writeCode.
 
 1. Create a registration system where a user should be able to register using a registration form with following data:
 
