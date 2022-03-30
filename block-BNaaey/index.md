@@ -1,4 +1,4 @@
-writeCode
+writeCode.
 
 Implement login for the previously registered user which have been generated in previous sections
 
