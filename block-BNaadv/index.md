@@ -19,7 +19,7 @@ Hash user's password when saving into database using `bcrypt` npm module.
 
 Handle these 3 pages:-
 
-1. Home page where `Register` and `Login` button should be displaced.
+1. Home page where `Register` and `Login` button should be displayed.
 
 2. Registration form which will be used to register data.
 
