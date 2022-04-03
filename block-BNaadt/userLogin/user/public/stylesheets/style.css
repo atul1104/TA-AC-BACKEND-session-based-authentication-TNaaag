@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  background-color: bisque;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+}
+.container h2 {
+  text-align: center;
+}
+form {
+  width: 600px;
+  padding: 1rem;
+  border: 1px solid black;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 6px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.index-btn {
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: left;
+  color: red;
+}
