@@ -13,7 +13,7 @@ var usersRouter = require('./routes/users');
 
 //connect to database
 mongoose.connect(
-  'mongodb://localhost/user',
+  'mongodb://localhost/user1',
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
     console.log(err ? err : 'Connected to database');
