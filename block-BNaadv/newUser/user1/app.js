@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 var session = require('express-session');
-var MongoStore = require('connect-mongo');
+var MongoStore = require('connect-mongo')(session);
 var flash = require('connect-flash');
 
 var indexRouter = require('./routes/index');
@@ -33,6 +33,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //session middleware
+app.use(
+  session({
+    secret: 'somerandomsecret',
+    saveUninitialized: false,
+    resave: false,
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  })
+);
+
+app.use(flash());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

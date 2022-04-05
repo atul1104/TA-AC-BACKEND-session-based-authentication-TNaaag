@@ -11,6 +11,9 @@
     <div class="container">
       <form action="/users/login" method="POST">
         <h2>User Login</h2>
+        <%if(error){%>
+        <p><%= error %></p>
+        <%}%>
         <input
           type="text"
           class="form-control"
